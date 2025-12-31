@@ -12,18 +12,13 @@
 <img src="../assets/inspiration/insp-waybar.png" width="800"/></td>
 
 # Steps
-### 1. Install Geist Mono Nerd Font
-```sh
-curl -L https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip -o GeistMono.zip
-mkdir -p ~/.local/share/fonts
-unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
-fc-cache -fv
-```
-### 2. Install waybar
-```sh
-sudo pacman -S waybar
-```
-### 3. Download waybar configs
+### 0. Before you start
+- Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
+- Make sure waybar is installed: `sudo pacman -S waybar`
+- Make sure `git` is installed: `sudo pacman -S git`
+- See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+
+### 1. Download waybar configs
 ```sh
 #download waybar directory
 git clone --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git
@@ -38,9 +33,9 @@ mv -i ~/cybrland/waybar ~/.config/
 # delete cybrland directory
 cd ~ && rm -rf cybrland
 ```
-### 5. Verify installation
+### 2. Verify installation
 ```sh
-ls ~/.config/waybar
+ls -R ~/.config/waybar
 ```
 
 You should see: `config.jsonc`, `modules.jsonc`, `style.css`, `scripts/`, `svg/`
@@ -65,7 +60,7 @@ You should see: `config.jsonc`, `modules.jsonc`, `style.css`, `scripts/`, `svg/`
 ```
 </details>
 
-### 6. Restart waybar
+### 3. Restart waybar
 ```sh
 killall waybar && waybar
 ```
