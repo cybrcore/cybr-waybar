@@ -14,6 +14,9 @@
   <em>waybar ↗ (top to bottom: secondary monitor, main monitor)</em>
 </p>
 
+> [!TIP]
+> I included my own special tool for Waybar - if you hover over the red dot next between CPU temp and Notification center and scroll, you can adjust the brightness of your monitors (works on desktop via DDC/CI, OSD-free)
+
 # Steps
 ### 0. Before you start
 - Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
