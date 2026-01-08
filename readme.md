@@ -20,6 +20,7 @@
 - Make sure waybar is installed: `sudo pacman -S waybar`
 - Make sure `git` is installed: `sudo pacman -S git`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- [Github](https://github.com/Alexays/Waybar) | [Arch Wiki](https://wiki.archlinux.org/title/Waybar)
 
 ### 1. Download waybar configs
 ```sh
