@@ -39,6 +39,11 @@ ls -R ~/.config/waybar
 
 You should see: `config.jsonc`, `modules.jsonc`, `style.css`, `scripts/`, `svg/`
 
+Make all scripts executable:
+```sh
+chmod +x ~/.config/waybar/scripts/*
+```
+
 > [!IMPORTANT]
 > Keep the file structure intact - configs use relative paths to `modules.jsonc` and `svg/` files.  
 > If waybar doesn't load, or doesn't have angled corners, verify the path matches your setup.  
@@ -67,28 +72,39 @@ There are two bars in the config, only one shows up after installation.
 Intended use is for multi-monitor setups, but single-monitor users can switch waybar layouts.
 
 #### For multi-monitor setups:
+Check your monitor configuration:
 ```sh
-# Check your monitor name(s)
 hyprctl monitors
+```
 
-# Output should look like:
-# Monitor [YOUR-FIRST-MONITOR-NAME] (ID 0):
-# ...
-# Monitor [YOUR-SECOND-MONITOR-NAME] (ID 1):
+Example output:
+```
+Monitor DP-2 (ID 0):
+	2560x1440@144Hz at 1920x0
+Monitor HDMI-A-1 (ID 1):
+	1920x1080@60Hz at 0x0
+```
 
-# Edit waybar config
+Edit monitor settings:
+```sh
 $EDITOR ~/.config/waybar/config.jsonc
 ```
-In the config file, uncomment BAR 2 and edit `"output"` in both bars according to your `hyprctl monitors` output:
+In the config file, uncomment BAR 2 and edit `"output"` in both bars according to `hyprctl monitors` output:
 ```jsonc
 /* BAR 1 */
 {
     "output": "YOUR-FIRST-MONITOR-NAME",
+	/* Example:
+	"output": "DP-2",
+	*/
     ...
 }
 /* BAR 2 */
 ,{
     "output": "YOUR-SECOND-MONITOR-NAME",
+	/* Example:
+	"output": "HDMI-A-1",
+	*/
     ...
 }
 ```
