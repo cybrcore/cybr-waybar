@@ -1,35 +1,35 @@
-```
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░  
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░  
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
- ░▒▓█████████████▓▒░░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
-```
-
-<img src="../assets/inspiration/insp-waybar.png"/></td>
-<p align="center">
-  <em>waybar ↗ (top to bottom: secondary monitor, main monitor)</em>
-</p>
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/repo-banners/cybr-waybar-banner.png" height=200px/>
 
 > [!TIP]
 > I included my own special tool for Waybar - if you hover over the red dot next between CPU temp and Notification center and scroll, you can adjust the brightness of your monitors (works on desktop via DDC/CI, OSD-free)
 
+# Showcase
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-waybar.png"/>
+<p align="center">
+  <em>waybar ↗ (top to bottom: secondary monitor, main monitor)</em>
+</p>
+
 # Steps
 ## 0. Before you start
-- Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
+- Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup#Fonts) is installed, you can do that from terminal with:
+```bash
+curl -L https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip -o GeistMono.zip
+mkdir -p ~/.local/share/fonts
+unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
+fc-cache -fv
+```
+- Make sure hyprland is installed: `sudo pacman -S hyprland` with [cybrcore theme](https://github.com/cybrcore/cybrland) applied
 - Make sure waybar is installed: `sudo pacman -S waybar`
 - Make sure `git` is installed: `sudo pacman -S git`
-- See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
-- [Github](https://github.com/Alexays/Waybar) | [Arch Wiki](https://wiki.archlinux.org/title/Waybar)
+- See [Installation Guide](https://github.com/cybrcore/cybrland/blob/main/INSTALL.md) if you`re coming from [cybr-hyprland](https://github.com/cybrcore/cybrland) and haven't set up prerequisites yet
+- [waybar Github](https://github.com/Alexays/Waybar) | [Arch Wiki](https://wiki.archlinux.org/title/Waybar)
 
 ## 1. Download waybar configs
 ```sh
 #download waybar directory
-git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set waybar && git checkout main && mv waybar ~/.config/ && cd ~ && rm -rf cybrland
+git clone --depth=1 --filter=blob:none --no-checkout https://github.com/cybrcore/cybr-waybar.git && cd cybr-waybar && git sparse-checkout init --cone && git sparse-checkout set waybar && git checkout main && mv waybar ~/.config/ && cd ~ && rm -rf cybr-waybar
 ```
-↑ Unsure what this does? [Explanation](../INSTALL.md#How-sparse-checkout-works)  
+↑ Unsure what this does? [Explanation](https://github.com/cybrcore/cybrland/blob/main/INSTALL.md#How-sparse-checkout-works)  
 
 ## 2. Verify installation
 ```sh

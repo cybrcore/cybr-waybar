@@ -1,9 +1,9 @@
 /* 
 # ---------------------------------------
-# CYBRbar     waybar config (part of cybrland)
-# Project:    https://github.com/scherrer-txt/cybrland
-# Author:     scherrer-txt   |   License:     GPL-3.0
-# Source:     ~/.config/waybar/config.jsonc
+# cybr-waybar     waybar config (part of cybrcore)
+# Project:        https://github.com/cybrcore/cybr-waybar
+# Author:         scherrer-txt   |   License:     GPL-3.0
+# Source:         ~/.config/waybar/config.jsonc
 # ---------------------------------------
 */
 [

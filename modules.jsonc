@@ -1,9 +1,9 @@
 /* 
 # ---------------------------------------
-# CYBRbar     waybar modules (part of cybrland)
-# Project:    https://github.com/scherrer-txt/cybrland
-# Author:     scherrer-txt   |   License:     GPL-3.0
-# Source:     ~/.config/waybar/modules.jsonc
+# cybr-waybar     waybar modules (part of cybrcore)
+# Project:        https://github.com/cybrcore/cybr-waybar
+# Author:         scherrer-txt   |   License:     GPL-3.0
+# Source:         ~/.config/waybar/modules.jsonc
 # ---------------------------------------
 */
 {
@@ -34,14 +34,14 @@
 	},
 	/* BRIGHTNESS */
 	"custom/brightness": {
-		"exec": "/home/sch/.config/waybar/scripts/bright-status.sh",
+		"exec": "~/.config/waybar/scripts/bright-status.sh",
 		"interval": 1,
 		"return-type": "json",
 		"format": "{text}",
 		"markup": true,
 		"tooltip": true,
-		"on-scroll-up": "/home/sch/.config/waybar/scripts/bright.sh up",
-		"on-scroll-down": "/home/sch/.config/waybar/scripts/bright.sh down"
+		"on-scroll-up": "~/.config/waybar/scripts/bright.sh up",
+		"on-scroll-down": "~/.config/waybar/scripts/bright.sh down"
 	},
 	/* BATTERY */
 	"battery": {
