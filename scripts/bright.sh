@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # ---------------------------------------
-# CYBRbar     waybar brigthness script (part of cybrland)
-# Project:    https://github.com/scherrer-txt/cybrland
-# Author:     scherrer-txt   |   License:     GPL-3.0
-# Source:     ~/.config/waybar/scripts/bright.sh
+# cybr-waybar     waybar brigthness script (part of cybrcore)
+# Project:        https://github.com/cybrcore/cybr-waybar
+# Author:         scherrer-txt   |   License:     GPL-3.0
+# Source:         ~/.config/waybar/scripts/bright.sh
 # ---------------------------------------
 
 LOG=/tmp/bright.log

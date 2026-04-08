@@ -11,7 +11,7 @@
 
 # Steps
 ## 0. Before you start
-- Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup#Fonts) is installed, you can do that from terminal with:
+- Make sure [Geist Mono Nerd Font](https://www.nerdfonts.com/font-downloads) is installed, you can do that from terminal with:
 ```bash
 curl -L https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip -o GeistMono.zip
 mkdir -p ~/.local/share/fonts
