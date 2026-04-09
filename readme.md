@@ -18,10 +18,10 @@ mkdir -p ~/.local/share/fonts
 unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
 fc-cache -fv
 ```
-- Make sure hyprland is installed: `sudo pacman -S hyprland` with [cybrcore theme](https://github.com/cybrcore/cybrland) applied
+- Make sure hyprland is installed: `sudo pacman -S hyprland` with [cybrcore theme](https://github.com/cybrcore/cybr-hyprland) applied
 - Make sure waybar is installed: `sudo pacman -S waybar`
 - Make sure `git` is installed: `sudo pacman -S git`
-- See [Installation Guide](https://github.com/cybrcore/cybrland/blob/main/INSTALL.md) if you`re coming from [cybr-hyprland](https://github.com/cybrcore/cybrland) and haven't set up prerequisites yet
+- See [Installation Guide](https://github.com/cybrcore/cybrdots/blob/main/INSTALL.md) if you're coming from [cybr-hyprland](https://github.com/cybrcore/cybr-hyprland) and haven't set up prerequisites yet
 - [waybar Github](https://github.com/Alexays/Waybar) | [Arch Wiki](https://wiki.archlinux.org/title/Waybar)
 
 ## 1. Download waybar configs
@@ -29,7 +29,7 @@ fc-cache -fv
 #download waybar directory
 git clone --depth=1 --filter=blob:none --no-checkout https://github.com/cybrcore/cybr-waybar.git && cd cybr-waybar && git sparse-checkout init --cone && git sparse-checkout set waybar && git checkout main && mv waybar ~/.config/ && cd ~ && rm -rf cybr-waybar
 ```
-↑ Unsure what this does? [Explanation](https://github.com/cybrcore/cybrland/blob/main/INSTALL.md#How-sparse-checkout-works)  
+↑ Unsure what this does? [Explanation](https://github.com/cybrcore/cybrdots/blob/main/INSTALL.md#How-sparse-checkout-works)  
 
 ## 2. Verify installation
 ```sh
