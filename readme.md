@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/repo-banners/cybr-waybar-banner.png" height=200px/>
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/repo-banners/cybr-waybar-banner-top.png"/>
 
 > [!TIP]
 > I included my own special tool for Waybar - if you hover over the red dot next between CPU temp and Notification center and scroll, you can adjust the brightness of your monitors (works on desktop via DDC/CI, OSD-free)
@@ -21,7 +21,7 @@ fc-cache -fv
 - Make sure hyprland is installed: `sudo pacman -S hyprland` with [cybrcore theme](https://github.com/cybrcore/cybr-hyprland) applied
 - Make sure waybar is installed: `sudo pacman -S waybar`
 - Make sure `git` is installed: `sudo pacman -S git`
-- See [Installation Guide](https://github.com/cybrcore/cybrdots/blob/main/INSTALL.md) if you're coming from [cybr-hyprland](https://github.com/cybrcore/cybr-hyprland) and haven't set up prerequisites yet
+- See [Installation Guide](https://github.com/cybrcore/cybrdots/blob/main/INSTALL.md) if you're coming from [cybrdots](https://github.com/cybrcore/cybrdots) and haven't set up prerequisites yet
 - [waybar Github](https://github.com/Alexays/Waybar) | [Arch Wiki](https://wiki.archlinux.org/title/Waybar)
 
 ## 1. Download waybar configs
